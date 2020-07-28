@@ -59,7 +59,11 @@ Bash ❤
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Run `bash -c "$(wget -O - https://raw.githubusercontent.com/pavanprakash21/react-library-generator/master/entry.sh)"` from your command line.
+* Run 
+  ```sh
+  bash -c "$(wget -O - https://raw.githubusercontent.com/pavanprakash21/react-library-generator/master/entry.sh)"
+  ```
+  from your command line.
 * It asks for the package name and the remote git url. Enter them. Remote git url is optional. You can always add it later.
 * Takes about 10 minutes to complete.
 * When everything is done, it will open a new tab with storybook running. Your development environment is set.
