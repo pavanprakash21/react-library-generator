@@ -260,7 +260,7 @@ module.exports = {
     "@storybook/addon-actions/register",
     "@storybook/addon-knobs/register",
     "@storybook/addon-links/register",
-    "@storybook/addon-viewport/register"
+    "@storybook/addon-viewport/register",
     "@storybook/preset-typescript",
   ],
   webpackFinal: async config => {
