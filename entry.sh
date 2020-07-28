@@ -25,7 +25,6 @@ fi
 yarn init -y
 
 # initialize git and add .gitignore
-touch .gitignore
 echo 'node_modules' >>.gitignore
 echo 'dist' >>.gitignore
 echo 'coverage' >>.gitignore
@@ -35,8 +34,6 @@ git commit -m 'Initial commit'
 
 # add prettier and its config
 yarn add --dev prettier
-touch prettier.config.js
-touch .prettierignore
 
 echo 'module.exports = {
   parser: "typescript",
@@ -216,7 +213,6 @@ npm run build
 # setup jest
 yarn add --dev jest ts-jest @types/jest
 npe scripts.test 'jest'
-touch jest.config.js
 echo "module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
@@ -231,7 +227,6 @@ echo "module.exports = {
 
 # setup react testing
 yarn add --dev @testing-library/react react-dom
-touch src/components/Hello/Hello.spec.tsx
 echo 'import React from "react";
 import { render, screen } from "@testing-library/react";
 
